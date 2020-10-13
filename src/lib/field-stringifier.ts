@@ -31,7 +31,7 @@ class DefaultFieldStringifier extends FieldStringifier {
 
 class ForceQuoteFieldStringifier extends FieldStringifier {
     stringify(value?: Field): string {
-        return this.isEmpty(value) ? '' : this.quoteField(String(value))
+        return this.isEmpty(value) ? '""' : this.quoteField(String(value))
     }
 }
 
